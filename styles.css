@@ -1,0 +1,275 @@
+@font-face {
+  font-family: 'mirimedium';
+  src: url('miriwin-webfont.eot');
+  src: url('miriwin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('miriwin-webfont.woff') format('woff'),
+    url('miriwin-webfont.ttf') format('truetype'),
+    url('miriwin-webfont.svg#mirimedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* עיצוב ראשי */
+
+body {
+  margin: 0px;
+  -webkit-font-smoothing antialiased;
+  text-rendering optimizelegibility;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* עיצוב תפריט */
+
+#logo {
+  font-family: mirimedium;
+  font-size: 35px;
+  color: #393e46;
+}
+
+.nav-wrapper {
+  text-align: center;
+  padding: 20px 20px 20px;
+}
+
+.nav-link-wrapper {
+  display: inline-block;
+  padding: 20px;
+
+}
+
+.nav-wrapper > div > a {
+  text-decoration: none;
+  padding: 2px 10px;
+  font-size: 23px;
+  font-family: sans-serif;
+  color: #393e46;
+  border-bottom: 1px solid #393e46;
+}
+
+.nav-link-wrapper a:hover {
+  color: #17b978;
+  border-bottom-color: #17b978;
+}
+
+.nav-link-wrapper a:visited {
+  font-weight:bold;
+}
+
+/*  עיצוב התמונות */
+
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1%;
+}
+
+.portfolio-img-background:hover {
+  opacity: 0.7;
+}
+
+.image-text-wrapper {
+  position: absolute;
+  top: 0px;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.image-text-wrapper > .logo-wrapper:hover h1 {
+  font-wight: 600;
+  color: #393e46;
+  background: #f6f6f6;
+  opacity: 0.9;
+}
+
+/* עיצוב המלל על התמונה */
+
+.logo-wrapper h1 {
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  transition: 0.2s;
+  color: #393e46;
+  font-wight: 600;
+  background: transparent;
+  border-radius: 15px;
+  background: #f6f6f6;
+  opacity: 0.6;
+}
+
+.logo-wrapper a {
+  text-decoration: none;
+}
+
+/* הפיכת התמונה לכהה כשעומדים עליה */
+
+.img-darken {
+  transition: 1s;
+  filter: brightness (10%);
+}
+
+/* עיצוב התמונה והמלל ב"אודות" */
+
+.about-image-and-text {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+
+  justify-content: center;
+}
+
+/* עיצוב התמונה שב"אודות" */
+
+#about-image img {
+  margin: 20px 10px 50px 70px;
+  height: 512px;
+  width: 384px;
+  border-radius: 4%;
+}
+
+
+/* עיצוב המלל שב"אודות" */
+
+#about-text {
+  height: 512px;
+  width: 384px;
+}
+
+/* עיצוב צור קשר */
+
+#logo-contact {
+  font-family: mirimedium;
+  font-size: 35px;
+  color: #393e46;
+  padding: 50px 80px 30px;
+}
+
+#logo-contact a {
+  text-decoration: none;
+  color: #393e46;
+}
+
+
+#logo-contact a:hover {
+  text-decoration: none;
+  color: #ef7e56;
+}
+
+.contact_background_page {
+  background-color: #17b978;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact_background_page #contact-container {
+  height: 525px;
+  margin: -35px;
+}
+
+#contact-container {
+  width: 700px;
+  border: 2px solid #393e46;;
+  background: white;
+  padding: 20px;
+  text-align:center;
+}
+
+.form {
+  font-family: sans-serif;
+  font-size: 30px;
+  padding: 10px 60px;
+
+}
+
+.form input {
+  width: 570px;
+  padding: 5px;
+  font-family: sans-serif;
+  font-size: 18px
+}
+
+textarea {
+  width: 580px;
+  font-family: sans-serif;
+  font-size: 18px
+}
+
+#submit input {
+  background:#17b978;
+  font-family: sans-serif;
+  font-size: 22px;
+  width: 590px;
+}
+
+/* עיצוב גלריה */
+
+.gallery img {
+  transition: 1s;
+  width: 240px;
+  height: 270px;
+  margin: 15px 25px;
+  border-radius: 10%;
+}
+
+.gallery img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+.gallery {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gallery-wrapper {
+  display: flex;
+  /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+  justify-content:center;
+}
+
+/* עיצוב עמוד הטיפים */
+
+.tips {
+  border: 1.5px dotted black;
+  background-color: #17b978;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+
+#tip-design {
+  border: 1.5px dotted black;
+  height: 350px;
+  width: 250px;
+  padding:5px;
+  margin: 10px 5px ;
+  background-color: #FFF;
+  text-align: center;
+  font-family: sans-serif;
+}
